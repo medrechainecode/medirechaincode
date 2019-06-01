@@ -1,0 +1,61 @@
+Login to google cloud
+
+ssh your instance
+
+Installation of Docker Compose
+
+Pre-requisite for Medrechaincode POC Installation 
+
+
+Operating Systems: Ubuntu Linux 14.04 / 16.04 LTS (both 64-bit), or Mac OS 10.12
+Docker Engine: Version 17.03 or higher
+Docker-Compose: Version 1.8 or higher
+Node: 8.9 or higher (note version 9 and higher is not supported)
+npm: v5.x
+git: 2.9.x or higher
+Python: 2.7.x
+A code editor of your choice, we recommend VSCode.
+
+
+
+sudo curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+
+sudo chmod +x /usr/local/bin/docker-compose
+
+docker-compose --version
+
+
+
+Instllation of Docker
+
+
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+
+
+sudo apt-get update
+
+apt-cache policy docker-ce
+
+sudo apt-get install -y docker-ce
+
+
+Installation of Node & NPM
+
+sudo apt-get install build-essential libssl-dev
+
+curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.33.7/install.sh -o install_nvm.sh
+
+bash install_nvm.sh
+
+nvm install 8.9.3
+
+
+Instllation of python and git
+
+
+sudo apt-get install pyhton
+
+sudo apt-get install git
